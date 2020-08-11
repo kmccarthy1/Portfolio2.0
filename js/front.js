@@ -1,10 +1,10 @@
-$(function () {
+$(function() {
 
     // ---------------------------------------------- //
     // Navbar
     // ---------------------------------------------- //
 
-    $(document).scroll(function () {
+    $(document).scroll(function() {
         if ($(window).scrollTop() >= $('header').offset().top) {
             $('nav').addClass('sticky');
         } else {
@@ -26,7 +26,7 @@ $(function () {
     // Preventing URL update on navigation link click
     // ---------------------------------------------- //
 
-    $('.navbar-nav a, #scroll-down').bind('click', function (e) {
+    $('.navbar-nav a, #scroll-down').bind('click', function(e) {
         var anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $(anchor.attr('href')).offset().top
@@ -53,7 +53,7 @@ $(function () {
         alternateColour.attr("href", $.cookie("theme_csspath"));
     }
 
-    $("#colour").change(function () {
+    $("#colour").change(function() {
 
         if ($(this).val() !== '') {
 
@@ -81,7 +81,7 @@ $(function () {
 function map() {
 
     var mapId = 'map',
-        mapCenter = [53.14, 8.22],
+        mapCenter = [37.54, 77.43],
         mapMarker = true;
 
     if ($('#' + mapId).length > 0) {
@@ -119,7 +119,7 @@ function map() {
 
         Stamen_TonerLite.addTo(map);
 
-        map.once('focus', function () {
+        map.once('focus', function() {
             map.scrollWheelZoom.enable();
         });
 
