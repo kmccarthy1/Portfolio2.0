@@ -133,7 +133,7 @@
                                 <h6>Full Stack Web Developer Bootcamp</h6>
                                 <h6>2019-2020</h6>
                                 <p>A course of real-world experience, presented by the School of Professional &amp; Continuing Studies, teaching best coding practices and developing skills necessary to build dynamic web applications while gaining proficiency
-                                    in theory and application of web development. This 24-week course is designed around the MERN stack which uses technologies including: HTML, CSS, Bootstrap, Firebase, mySQL, MongoDB, Node, Git, Express, and React.
+                                    in theory and application of web development. The 24-week course was designed around the MERN stack which uses technologies including: HTML, CSS, Bootstrap, Firebase, mySQL, MongoDB, Node, Git, Express, and React.
                                 </p>
                             </div>
                             <!-- <div class="col-md-4">
@@ -194,7 +194,7 @@
                         </div>
 
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <ul class="list-inline dev-icons ">
                             <li href="https://en.wikipedia.org/wiki/HTML5" class="list-inline-item ">
                                 <i class="fa fa-html5 "></i>
@@ -212,7 +212,7 @@
                                 <i class="fa fa-node-js "></i>
                             </li>
 
-                    </div>
+                    </div> -->
                     <!-- <div class="row">
                         
                         <div class="col-md-4">
@@ -290,29 +290,30 @@
                     <h2 class="heading">Contact</h2>
                     <div class="row">
                         <div class="col-lg-6">
-                            <form id="contact-form" method="post" action="#" class="contact-form">
+
+                            <form id="contact-form" method="post" action="contact.php" class="contact-form" role="form">
                                 <div class="controls">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="name">Your first name *</label>
-                                                <input type="text" name="name" placeholder="Enter your first name" required="required" class="form-control">
+                                                <label for="form_name">First name *</label>
+                                                <input id="form_name" type="text" name="name" placeholder="Enter your first name" required="required" class="form-control" data-error="Firstname is required.">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="surname">Your last name *</label>
-                                                <input type="text" name="surname" placeholder="Enter your last name" required="required" class="form-control">
+                                                <label for="form_lastname">Last name *</label>
+                                                <input id="form_lastname" type="text" name="surname" placeholder="Enter your last name" required="required" class="form-control" data-error="Lastname is required.">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="surname">Your email *</label>
-                                        <input type="email" name="email" placeholder="Enter your email" required="required" class="form-control">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" placeholder="Enter your email" required="required" class="form-control" data-error="Valid email is required.">
                                     </div>
                                     <div class="form-group">
-                                        <label for="surname">Your message for me *</label>
-                                        <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
+                                        <label for="form_message">Your message for me *</label>
+                                        <textarea id="form_message" rows="4" name="message" placeholder="Enter your message" required="required" class="form-control" data-error="Please, leave a message"></textarea>
                                     </div>
                                     <div class="text-center">
                                         <input type="submit" name="name" value="Send message" class="btn btn-outline-primary btn-block">
